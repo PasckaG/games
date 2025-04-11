@@ -1,0 +1,42 @@
+.game-container {
+    text-align: center;
+    background: linear-gradient(to bottom, #1e1e2f, #3c3c5c);
+    min-height: 100vh;
+    padding: 30px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .game-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    text-shadow: 2px 2px #000000;
+  }
+  
+  canvas {
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    background-color: #222;
+    border-radius: 10px;
+  }
+  
+  .score-text {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #00ffcc;
+  }
+  
+  .game-over {
+    color: #ff4d4d;
+    font-size: 28px;
+    margin-top: 15px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+  
