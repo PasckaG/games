@@ -1,35 +1,30 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import GamePage from './components/GamePage';
 import HomePage from './components/HomePage';
 import AbtPage from './components/AbtPage';
-import ShopPage from './components/ShopPage';
 import LogPage from './components/LogPage';
-import GameBar from './components/GameBar';
-import Profile from './components/ProfileCard'
-import GameList from './Games'
-import objs from "./Data/data";
-import Games from "./Games";
-import './Css/style.css';
+import StorePage from './components/StorePage';
+import RegisterPage from './components/RegisterPage';
+import Games from './Games';
+import UserProfile from './components/UserProfile';
 import ProfileCard from './components/ProfileCard';
-
+import './Css/style.css';
 
 function App() {
   const isLoggedIn = !!localStorage.getItem('user');
 
-  const cate = ['All','Open World', 'Adventure','Rpg','Racing']
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/game" element={<GamePage />} />
-        <Route path="/Shop" element={<ShopPage />} />
+        <Route path="/Game" element={<GamePage />} />
         <Route path="/AbtPage" element={<AbtPage />} />
-        <Route path='/login' element={<LogPage />} />
-        <Route path='/GameBar' element={<GameBar />} />
-        <Route path='/Games' element={<Games />} />
-        <Route path='/Games' element={<Games />} />
-        <Route path='/Profile' element={<ProfileCard />} />
+        <Route path="/Login" element={<LogPage />} />
+        <Route path="/StorePage" element={<StorePage />} />
+        <Route path="/Games" element={<Games />} />
+        <Route path="/Register" element={<RegisterPage />} />
+        <Route path="/Profiles" element={<UserProfile />} />
       </Routes>
     </Router>
   );

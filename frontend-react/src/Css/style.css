@@ -179,3 +179,12 @@ header{
         overflow-x: hidden;
     }
 }
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: blue;
+  }
+  
